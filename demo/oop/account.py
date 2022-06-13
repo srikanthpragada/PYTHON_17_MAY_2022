@@ -1,4 +1,11 @@
 class Account:
+    minbal = 5000
+
+    @staticmethod
+    def getminbal():
+        return Account.minbal
+
+
     # Constructor
     def __init__(self, acno, customer, balance=0):
         # Object attributes or Fields or Instance Variables
@@ -11,7 +18,11 @@ class Account:
         self.balance += amount
 
     def withdraw(self, amount):
-        self.balance -= amount
+        if self.balance - Account.minbal >= amount:
+            self.balance -= amount
+        else:
+            raise ValueError('Insufficient Balance')
+
 
     def getbalance(self):
         return self.balance

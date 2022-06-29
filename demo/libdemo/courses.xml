@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<courses>
+    <course>
+        <title>Python</title>
+        <duration kind="hours">36</duration>
+        <fee currency="inr">5000</fee>
+    </course>
+    <course>
+        <title>DataScience (Machine Learning)</title>
+        <duration kind="hours">36</duration>
+        <fee currency="inr">10000</fee>
+    </course>
+    <course>
+        <title>AWS Fundamentals Workshop</title>
+        <duration kind="days">3</duration>
+        <fee currency="USD">100</fee>
+    </course>
+     <course>
+        <title>Front-end With React</title>
+        <duration kind="hours">32</duration>
+        <fee>5000</fee>
+    </course>
+</courses>

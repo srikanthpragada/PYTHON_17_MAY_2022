@@ -25,7 +25,11 @@ for link in links:
         continue
 
     if not url.startswith('http'):
-        url = WEBSITE + "//" + url  # Convert relative url to absolute
+        # Convert relative url to absolute
+        if not url.startswith("/"):
+            url = "//" + url
+
+        url = WEBSITE + url
 
 
     print(text)

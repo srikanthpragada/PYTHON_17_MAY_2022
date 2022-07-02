@@ -2,7 +2,7 @@ CREATE TABLE employees (
     id       INTEGER      PRIMARY KEY AUTOINCREMENT,
     fullname VARCHAR (30) NOT NULL,
     job      VARCHAR (10) default 'JP',
-    salary   INTEGER
+    salary   INTEGER  check (salary >= 100000)
 );
 
 insert into employees(fullname,job,salary)
